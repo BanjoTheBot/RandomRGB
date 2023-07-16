@@ -42,4 +42,11 @@ public class RandomRGBComponent extends JComponent {
         g2.fill(colRep);
 
     }
+
+    // Reloads the colour values
+    public void reloadColor(){
+        red = gen.nextInt(0, 256);
+        green = gen.nextInt(0, 256);
+        blue = gen.nextInt(0, 256);
+    }
 }
