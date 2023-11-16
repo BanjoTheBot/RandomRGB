@@ -4,9 +4,7 @@ import javax.swing.JFrame;
 // Lachlan Paul, 2023
 
 public class RandomRGBViewer {
-
     public static void main(String[] args) {
-
         JFrame frame = new JFrame();
         frame.setSize(500, 500);
         frame.setTitle("RandomRGB");
@@ -22,16 +20,14 @@ public class RandomRGBViewer {
             frame.repaint();
         });
 
-       // Adding the button before the rest of the page is vital,
-       // otherwise everything else is gone.
-
+        // Adding the button before the rest of the page is vital,
+        // otherwise everything else is gone.
         frame.add(reload);
         frame.add(component);
 
-        // Sets it in the middle of the screen
+        // Draws the frame in the middle of the screen
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
-
     }
 }
 
